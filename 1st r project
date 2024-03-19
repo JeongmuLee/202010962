@@ -1,0 +1,37 @@
+package <- c(10.4, 12.4, 12.3, 11.7, 11.2)
+years <- paste(2018:2022, '년', sep = '')
+names(package) <- years
+package
+packrat <- package[2:5] - package[1:4]
+packrat  
+
+service <- c(63.2, 72.3, 78.7, 96.1, 122.6)
+names(service) <- years
+service
+servrat <- service[2:5] - service[1:4]
+servrat
+
+game <- c(62.4, 63.4, 67.2, 72.7, 67.5)
+names(game) <- years
+game
+gamerat <- game[2:5] - game[1:4]
+gamerat
+
+total <- package + service + game
+total
+totalrat <- total[2:5] - total[1:4]
+totalrat
+
+package
+service
+game
+total
+
+packrat
+servrat
+gamerat
+totalrat
+
+ratrank <- sort(x = totalrat)
+
+ratrank
